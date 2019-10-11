@@ -12,9 +12,9 @@
 
 ## 工具使用
 ```
-启动代理池服务: python server_sanic.py > server.log 2>&1 OR python server_flask.py > server.log
-启动代理池维护: python check_validate.py > check.log 2>&1
-启动本地随机转发: python proxy.py > localproxy.log
+启动代理池服务: python server_sanic.py > server.log 2>&1 & OR python server_flask.py > server.log &
+启动代理池维护: python check_validate.py > check.log 2>&1 &
+启动本地随机转发: python proxy.py > localproxy.log 2>&1 &
 ```
 #### HTTPS支持需要将证书导入Firefox的证书信任中
 
