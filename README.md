@@ -11,12 +11,20 @@
 ```
 
 ## 工具使用
+Python3
 ```
-启动代理池服务: python server_sanic.py > server.log 2>&1 & OR python server_flask.py > server.log &
-启动代理池维护: python check_validate.py > check.log 2>&1 &
-启动本地随机转发: python proxy.py > localproxy.log 2>&1 &
+pip install -r requirements.txt
+1、需要安装和启动redis(可以参考redis_start.sh)
+2、启动代理池服务: python server_sanic.py > server.log 2>&1 & 或者 python server_flask.py > server.log &
+3、启动代理池检测和维护: python check_validate.py > check.log 2>&1 &
+4、启动本地代理随机转发: python proxy.py > localproxy.log 2>&1 &
 ```
+将Firefox浏览器代理设置为本地的8123端口即可
+
 #### HTTPS支持需要将证书导入Firefox的证书信任中
+```
+浏览器访问http://baseproxy.ca/下载证书并加入信任
+```
 
 
 ## 参考项目
