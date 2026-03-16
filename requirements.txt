@@ -4,6 +4,6 @@ schedule
 pyquery
 requests
 flask
-pyOpenSSL==18.0.0
+pyOpenSSL==26.0.0
 chardet==3.0.4
 sanic;sys_platform!='win32'
